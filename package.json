@@ -21,8 +21,7 @@
     },
     "scripts": {
         "start": "craco start",
-        "once": "CHECK_STATE_URL=https://scantrad-wa-notifier-private.herokuapp.com/state craco start",
-        "build": "craco build",
+        "build": "npm run build",
         "test": "craco test",
         "eject": "react-scripts eject"
     },
