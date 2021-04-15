@@ -36,6 +36,7 @@ const useBot = (): [
         })
             .then((res) => res.json())
             .then((jsondata) => {
+                console.log(jsondata);
                 setIsRunning({ running: jsondata.running });
             });
     }, []);
