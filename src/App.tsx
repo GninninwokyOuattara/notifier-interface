@@ -3,7 +3,6 @@ import logo from "./logo.svg";
 import "./App.css";
 import useBot from "./Hooks/useBot";
 import botLogo from "./img/bot.gif";
-import Spinner from "./Components/Spinner";
 
 const startBot = process.env.REACT_APP_START_BOT_URL as string;
 const restartBot = process.env.REACT_APP_RESTART_BOT_URL as string;
