@@ -12,20 +12,6 @@ const useBot = (): [
 ] => {
     const [isRunning, setIsRunning] = useState<Response>({ running: false });
 
-    const runBot = () => {
-        fetch(startBot, {
-            method: "GET",
-            headers: {
-                "access-control-allow-origin": "*",
-                "Content-type": "application/json; charset=utf-8",
-            },
-        })
-            .then((res) => res.json())
-            .then((jsondata) => {
-                setIsRunning({ running: jsondata.running });
-            });
-    };
-
     useEffect(() => {
         fetch(checkStateUrl, {
             method: "GET",
